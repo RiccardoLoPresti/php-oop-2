@@ -20,4 +20,39 @@ class Product{
         $this->image = $_image;
     }
 
+    public function setIsAvaible(){
+        if($this->is_avaible){
+            return 'Disponibile';
+        }else{
+            return 'Non Disponibile';
+        }
+    }
+
+    public function getIsAvaible(){
+        return $this->is_avaible;
+    }
+
+    public function getOutPut(){
+        if($this->weight){
+            return $this->weight;
+        }else if ($this->feature){
+            return $this->feature;
+        }else if($this->material){
+            return $this->material;
+        }
+
+        if($this->ingredients){
+            return $this->ingredients;
+        }else if ($this->size){
+            return $this->size;
+        }else{
+            return '-';
+        }
+
+        if($this->taste){
+            return $this->taste;
+        }else{
+            return '-';
+        }
+    }
 }

@@ -56,8 +56,18 @@ $product_list=[$product1,$product2,$product3,$product4];
                                 <h5 class="card-title text-capitalize"><?php echo $product->name ?><?php echo ' ' ?><?php echo $product->categorys->name ?></h5>
                                 <h6 class="text-capitalize"><?php echo $product->brand ?></h3>
                                 <p class="text-capitalize">Categoria: <?php echo $product->categorys->name ?></p>
+                                <div class="food">
+                                    <p>Caratteristiche:</p>
+                                    <ul class="text-capitalize">
+                                        <li><?php echo $product->weight ?? '-' ?> kg</li>
+                                        <li><?php echo $product->ingredients ?? '-' ?></li>
+                                        <li><?php echo $product->taste ?? '-' ?></li>
+                                        <li><?php echo $product->getOutPut() ?></li>
+                                    </ul>
+                                </div>
+                                
                                 <p class="text-capitalize">Prezzo: &euro; <?php echo $product->price ?></p>
-                                <p class="text-capitalize">Disponibilità: <?php echo $product->is_avaible ?></p>
+                                <p class="text-capitalize">Disponibilità: <?php echo $product->setIsAvaible() ?></p>
                                 <a href="#" class="btn btn-primary">Aggiungi al carrello</a>
                             </div>
                         </div>
