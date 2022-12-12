@@ -44,6 +44,11 @@ $product_list=[$product1,$product2,$product3,$product4];
     <title>OOP-2 php</title>
 </head>
 <body>
+
+    <header class="bg-dark py-5 text-white text-center">
+        <h1>AnimalStore</h1>
+    </header>
+
     <main>
         <div class="container">
             <div class="row py-5">
@@ -78,5 +83,9 @@ $product_list=[$product1,$product2,$product3,$product4];
             
         </div>
     </main>
+
+    <footer class="bg-dark py-5 text-white text-center">
+        <span>By RiccardoLoPresti</span>
+    </footer>
 </body>
 </html>

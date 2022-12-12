@@ -39,6 +39,8 @@ class Product{
             return $this->feature;
         }else if($this->material){
             return $this->material;
+        }else{
+            return '-';
         }
 
         if($this->ingredients){
